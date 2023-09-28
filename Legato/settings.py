@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-k5ioorwvgmh!_+y=5=s)ws)r7@h_ik5twx%$ep(u9d-6f#=!4#
 DEBUG =True
 
 
-ALLOWED_HOSTS = ['127.0.0.1','upputuri-nagababu-portfolio.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['.vercel.app']
 #ALLOWED_HOSTS = ['afternoon-sea-44757.herokuapp.com']
 #ALLOWED_HOSTS =['desolate-ocean-33028.herokuapp.com']
 # Application definition

@@ -1,0 +1,52 @@
+.rounded {
+    border-radius: 0.25
+rem
+!important;
+}
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.py-4 {
+    padding-top: 1.5
+rem
+!important;
+    padding-bottom: 1.5
+rem
+!important;
+}
+.p-3 {
+    padding: 1
+rem
+!important;
+}
+.mb-2 {
+    margin-bottom: 0.5
+rem
+!important;
+}
+
+.name {
+    font-size: .8125rem;
+}
+.text-muted {
+    --bs-text-opacity: 1;
+    color: #6c757d!important;
+}
+.text-decoration-none {
+    text-decoration: none!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.pt-1 {
+    padding-top: 0.25
+rem
+!important;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}

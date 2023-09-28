@@ -1,0 +1,630 @@
+{% load static %}
+{% load widget_tweaks %}
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<title>Upputuri Nagababu</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="{% static 'css/font.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/download_resume.css' %}">
+
+<!--    <link rel="stylesheet" href="A.fonts,,_icomoon,,_style.css+css,,_bootstrap.min.css+css,,_jquery-ui.css+css,,_owl.carousel.min.css+css,,_owl.theme.default.min.css+css,,_owl.theme.default.min.css+css,,_jquery.fancybox.min.css+css,,_bootstrap-datepicker.css+fonts,,_flaticon,,_font,,_flaticon.css+css,,_aos.css+css,,_style.css,Mcc.nUFy_33lg_.css.pagespeed.cf.Yp4m69fwch.css" />-->
+<link rel="stylesheet" href="{% static 'css/all.css' %}">
+<link rel="stylesheet" href="{% static 'css/resume.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!--    <link rel="stylesheet" href="{% static 'css/messages.css' %}">-->
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+<!--   <div class="mt-2">-->
+<!--            {% for message in messages %}-->
+<!--                    <div class="container-fluid p-0">-->
+<!--                    <div class="alert {{ message.tags }} " role="alert" >-->
+<!--                      {{ message }}-->
+<!--                    </div>-->
+<!--                    </div>-->
+<!--            {% endfor %}-->
+<!--   </div>-->
+
+<div id="overlayer"></div>
+<div class="loader">
+<div class="spinner-border text-primary" role="status">
+</div>
+</div>
+<div class="site-wrap">
+<div class="site-mobile-menu site-navbar-target">
+<div class="site-mobile-menu-header">
+<div class="site-mobile-menu-close mt-3">
+<span class="icon-close2 js-menu-toggle"></span>
+</div>
+</div>
+<div class="site-mobile-menu-body"></div>
+</div>
+<header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-6 col-xl-2">
+<!--    "h2 mb-0"-->
+    <h4 class="mb-0 site-logo"><div class="name"><font color="#fff" >Upputuri Nagababu </font></div> </h4>
+</div>
+<div class="col-5 col-md-10 d-none d-xl-block">
+<nav class="site-navigation position-relative text-right" role="navigation">
+<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+<li><a href="" class="nav-link">Home</a></li>
+<!--<li class="has-children">-->
+    <li>
+<a href="#about-section" class="nav-link">About Us</a>
+<ul class="dropdown">
+</ul>
+</li>
+<li><a href="#resume-section" class="nav-link">Resume</a></li>
+<li><a href="#project-section" class="nav-link">Projects</a></li>
+<li><a href="{% url 'linkedin' %}" class="nav-link">LinkedIn</a></li>
+<li><a href="{% url 'github' %}" class="nav-link">GitHub</a></li>
+<!-- <li><a href="https://www.hackerrank.com/l17cs99552">HackerRank</a></li>-->
+<li><a href="{% url 'stack' %}" class="nav-link">StackOverflow</a></li>
+<li><a href="#contact-section" class="nav-link">Contact</a></li>
+</ul>
+</nav>
+</div>
+<div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+</div>
+</div>
+</header>
+<div class="site-blocks-cover overlay" style="background-image:url({% static 'images/bg.jpg' %})" data-aos="fade" id="home-section">
+<div class="container">
+<div class="row align-items-center justify-content-center">
+<div class="col-md-8 mt-lg-5 text-center">
+<h1 class="text-uppercase" data-aos="fade-up">Welcome</h1>
+<p class="ml-5 desc" data-aos="fade-up" data-aos-delay="700">This is Upputuri Nagababu, Currently working in @ Tiger Analytics as SeniorAnalyst - Data Science</p>
+<div data-aos="fade-up" data-aos-delay="100">
+<a href="#contact-section" class="btn smoothscroll btn-primary mr-2 mb-2">Get In Touch</a>
+</div>
+</div>
+</div>
+</div>
+<a href="#about-section" class="mouse smoothscroll">
+<span class="mouse-icon">
+<span class="mouse-wheel"></span>
+</span>
+</a>
+</div>
+<div class="site-section cta-big-image" id="about-section">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center" data-aos="fade">
+<h2 class="section-title mb-3">About Us</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+<figure class="circle-bg">
+<script data-pagespeed-no-defer>//<![CDATA[
+(function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;l<k.length-1;l++){var m=k[l];m in h||(h[m]={});h=h[m]}
+var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");c=this+"";if(0>b||1342177279<b)throw new RangeError("Invalid count value");b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});var t=this;
+function u(b,c){var a=b.split("."),d=t;a[0]in d||!d.execScript||d.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===c?d[e]?d=d[e]:d=d[e]={}:d[e]=c};function v(b){var c=b.length;if(0<c){for(var a=Array(c),d=0;d<c;d++)a[d]=b[d];return a}return[]};function w(b){var c=window;if(c.addEventListener)c.addEventListener("load",b,!1);else if(c.attachEvent)c.attachEvent("onload",b);else{var a=c.onload;c.onload=function(){b.call(this);a&&a.call(this)}}};var x;function y(b,c,a,d,e){this.h=b;this.j=c;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=d;this.b={};this.a=[];this.c={}}
+function z(b,c){var a,d,e=c.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=c.offsetWidth&&0>=c.offsetHeight)a=!1;else{d=c.getBoundingClientRect();var f=document.body;a=d.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);d=d.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+d;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&d<=b.g.width)}a&&(b.a.push(e),
+b.c[e]=!0)}y.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&z(this,b)};u("pagespeed.CriticalImages.checkImageForCriticality",function(b){x.checkImageForCriticality(b)});u("pagespeed.CriticalImages.checkCriticalImages",function(){A(x)});
+function A(b){b.b={};for(var c=["IMG","INPUT"],a=[],d=0;d<c.length;++d)a=a.concat(v(document.getElementsByTagName(c[d])));if(a.length&&a[0].getBoundingClientRect){for(d=0;c=a[d];++d)z(b,c);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(c=!!b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),d=1;d<b.a.length;++d){var e=","+encodeURIComponent(b.a[d]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(B())),131072>=a.length+e.length&&(a+=e),c=!0);C=a;if(c){d=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=
+new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(r){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(D){}}f&&(f.open("POST",d+(-1==d.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}
+function B(){var b={},c;c=document.getElementsByTagName("IMG");if(!c.length)return{};var a=c[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var d=0;a=c[d];++d){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var C="";u("pagespeed.CriticalImages.getBeaconData",function(){return C});
+u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=r;d&&w(function(){window.setTimeout(function(){A(r)},0)})});})();
+
+pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.com/theme/nitro/','-ilGEe-FWC',true,false,'Lbf6YK4ANmA');
+//]]></script>
+<!--    <img src="{% static 'images/jeevan1-removebg-preview.jpg' %}" alt="Image" class="img-fluid" data-pagespeed-url-hash="2285904982" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">-->
+ <img src="{{ about_us.profile_pic.url }}" alt="Image" class="img-fluid" data-pagespeed-url-hash="2285904982" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+
+</figure>
+    <br><br>
+     <a href="https://www.hackerrank.com/l17cs99552" class="btn bg-gradient-primary w-50 mt-4 mb-0" >HackerRank</a>
+
+</div>
+<div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+<div class="mb-4">
+<!--<h3 class="h3 mb-4 text-black">My Story</h3>-->
+<h3 class="h3 mb-4 text-black">My Story</h3>
+    <p>{{about_us.description}}</p></div>
+<div class="mb-4">
+<!--<ul class="list-unstyled ul-check success">-->
+<!--    <ul class="">-->
+<!--<li>Analyzed pend and finalized claim datasets using exploratory data-->
+<!--analysis and MongoDB aggregation framework helped to Anthem make-->
+<!--decisions based on findings in claims data with predictive ML model.</li>-->
+<!--<li> Implemented Timber Enhancement to increase more profit in Anthem.</li>-->
+<!--<li>Applied change control to Django development processes to provide-->
+<!--software enhancements without disruptions for end users.</li>-->
+<!--<li>Collaborated with the quality assurance team to verify the correct-->
+<!--implementation of application development changes in well quote.</li>-->
+<!--<li>Planned, developed, tested, deployed, and maintained Django-->
+<!--application assets in Azure.</li>-->
+<!--</ul>-->
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class="site-section">
+<div class="container">
+<div class="row mb-5 justify-content-center">
+<div class="col-md-7 text-center">
+<h3 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">PyPI-Python Packages</h3>
+<p class="lead" data-aos="fade-up" data-aos-delay="100">Created Data Science and Django reusable packages and packed into PyPI</div>
+</div>
+<div class="row">
+<div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+<div class="owl-carousel slide-one-item-alt">
+<img src="{% static 'images/webimg1.png' %}" alt="Image" class="img-fluid" data-pagespeed-url-hash="2255181827" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+<img src="{% static 'images/webimg2.png' %}" alt="Image" class="img-fluid" data-pagespeed-url-hash="2549681748" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+<img src="{% static 'images/webimg3.png' %}" alt="Image" class="img-fluid" data-pagespeed-url-hash="2844181669" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+<!--<img src="{% static 'images/sm4.jpg' %}" alt="Image" class="img-fluid" data-pagespeed-url-hash="3138681590" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">-->
+</div>
+<div class="custom-direction">
+<a href="#" class="custom-prev"><span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+</svg>
+<!--    icon-keyboard_backspace-->
+    <span class=""></span></span>
+</a>
+    <a href="#" class="custom-next"><span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg><span class=""></span></span>
+    </a>
+<!--    icon-keyboard_backspace-->
+
+</div>
+</div>
+<div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+<div class="owl-carousel slide-one-item-alt-text">
+<div>
+<h2 class="section-title mb-3">Minimal and Formal Design</h2>
+<p class="lead">This is a Django web application, used for order food items on online</p>
+<p>we are created django reusable package, This package for organizations, other projects</p>
+<p><a href="https://naga-django-food-app.herokuapp.com/" class="btn btn-primary mr-2 mb-2">see website</a></p>
+</div>
+
+<div>
+<h2 class="section-title mb-3">Take your business online</h2>
+<p class="lead">This is same django application as previous</p>
+<p> you can install from pip <br>
+pip install Nagababu-Django-Webapps</p>
+<p><a href="https://naga-django-food-app.herokuapp.com/" class="btn btn-primary mr-2 mb-2">see website</a>
+    <a href="https://pypi.org/project/Nagababu-Django-Webapps/" class="btn btn-primary mr-1 mb-2">see pypi package</a>
+</p>
+</div>
+
+<div>
+<h5 class="section-title mb-3">Predicting house prices</h5>
+<p class="lead">we are created ML reusable App& deployed using Django with MongoDB</p>
+<p>This App use for organizations, other projects, predicting price for different house types<br>
+    install using : pip install Naga-Ml-Model-Apps
+</p>
+<p><a href="https://ml-house-prediction-app.herokuapp.com/" class="btn btn-primary mr-2 mb-2">see website</a>
+    <a href="https://pypi.org/project/Naga-Ml-Model-Apps/" class="btn btn-primary mr-1 mb-2">see pypi package</a>
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="site-section border-bottom" id="team-section">
+<div class="container">
+<div class="row mb-5 justify-content-center">
+<div class="col-md-8 text-center">
+<h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">Our Team</h2>
+<p class="lead" data-aos="fade-up" data-aos-delay="100">Dynamic, conceptualized and friendly team in @Legato</p>
+</div>
+</div>
+<div class="row">
+    {% for i in team_data %}
+        <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="team-member">
+
+                    <img src="{{i.pic.url}}" alt="Image"  data-pagespeed-url-hash="3965542881" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" width="200px" height="200px">
+
+                            <div class="p-3">
+                            <h3>{{i.name}}</h3>
+                                <span class="position">{{i.role}}</span>
+                            </div>
+            </div>
+        </div>
+
+    {% endfor %}
+
+</div>
+</div>
+</section>
+
+
+
+
+<section class="site-section">
+<div class="container">
+<div class="row mb-5 justify-content-center">
+<div class="col-md-7 text-center">
+<h3 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">AI House</h3>
+<p class="lead" data-aos="fade-up" data-aos-delay="100">Implemented Machine Learning models on multiple domains</div>
+</div>
+<div class="row">
+<div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+<div class="owl-carousel slide-one-item-alt">
+<!--<img src="{% static 'images/webimg1.png' %}" alt="Image" class="img-fluid" data-pagespeed-url-hash="2255181827" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">-->
+<img src="{% static 'images/textspeech.png' %}" alt="Image" class="img-fluid" data-pagespeed-url-hash="2549681748" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+<img src="{% static 'images/webimg3.png' %}" alt="Image" class="img-fluid" data-pagespeed-url-hash="2844181669" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+<!--<img src="{% static 'images/sm4.jpg' %}" alt="Image" class="img-fluid" data-pagespeed-url-hash="3138681590" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">-->
+</div>
+<div class="custom-direction">
+<a href="#" class="custom-prev"><span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+</svg>
+<!--    icon-keyboard_backspace-->
+    <span class=""></span></span>
+</a>
+    <a href="#" class="custom-next"><span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+</svg><span class=""></span></span>
+    </a>
+<!--    icon-keyboard_backspace-->
+
+</div>
+</div>
+<div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+<div class="owl-carousel slide-one-item-alt-text">
+<!--<div>-->
+<!--<h2 class="section-title mb-3">Minimal and Formal Design</h2>-->
+<!--<p class="lead">This is a Django web application, used for order food items on online</p>-->
+<!--<p>we are created django reusable package, This package for organizations, other projects</p>-->
+<!--<p><a href="https://naga-django-food-app.herokuapp.com/" class="btn btn-primary mr-2 mb-2">see website</a></p>-->
+<!--</div>-->
+
+<div>
+<h2 class="section-title mb-3">Text to Speech </h2>
+<p class="lead">This is NLP Model for Text to Speech using google text to speech (gTTS) </p>
+<!--<p> you can install from pip <br>-->
+<!--pip install Nagababu-Django-Webapps</p>-->
+<p><a href="{% url 'tx_to_sp' %}" class="btn btn-primary mr-2 mb-2">Click to see Model</a>
+</p>
+</div>
+
+<div>
+<h5 class="section-title mb-8">House Price Prediction</h5>
+<p class="lead">This is ML Model used to Predict of the different house types</p>
+<!--<p>This App use for organizations, other projects, predicting price for different house types<br>-->
+<!--    install using : pip install Naga-Ml-Model-Apps-->
+<!--</p>-->
+<p><a href="{% url 'price_predict' %}" class="btn btn-primary mr-2 mb-2">Click to see Model</a>
+
+</p>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+<section class="site-section" id="resume-section">
+<div class="container">
+<div class="row mb-3">
+<div class="col-12 text-center" data-aos="fade">
+<h2 class="section-title mb-3">Resume</h2>
+</div>
+</div>
+   <div class="untree_co-section" id="resume-section1">
+<div class="container">
+<div class="row">
+<div class="section-heading text-center col-md-12 mb-5" data-aos="fade-up" data-aos-delay="0">
+</div>
+</div>
+<div class="row">
+<div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+    <img src="{{ about_us.profile_pic.url }}" alt="Image" class="img-fluid" data-pagespeed-url-hash="1559582464" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+<br><br><br><br><br><br><br>
+    <a href="{% static 'resume/Upputuri_Nagababu_Resume.pdf' %}" class="btn bg-gradient-primary w-70 mt-4 mb-0" >Download Resume</a>
+</div>
+<div class="col-lg-7 ml-auto" data-aos="fade-up" data-aos-delay="200">
+<h3 class="mb-5">Work Experience</h3>
+
+{% for i in resume %}
+        <div class="resume-item d-flex work">
+            <div>
+                <h4>{{i.title}}</h4>
+                    <div class="d-flex">
+                        <div class="d-flex resume-meta">
+                            <span class="mr-3">
+                                <span class="icon">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-building" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z" />
+                                            <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z" />
+                                    </svg>
+                                </span>
+                                <span>{{i.working_company}}</span>
+                            </span>
+                            <span class="icon">
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                </svg>
+                            </span>
+                            <span>{{i.location}}</span>
+                        </div>
+                        <div></div>
+                    </div>
+            </div>
+            <div class="ml-auto resume-meta">
+                <div class="clearfix">
+                    <span class="period d-block float-right"><span>{{i.emptype}}</span></span>
+                </div>
+                <span class="icon">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z" />
+                            <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z" />
+                                <rect width="2" height="2" x="11" y="6" rx=".5" />
+                    </svg>
+                </span>
+                <span>{{i.dates}}</span>
+            </div>
+        </div>
+    {% endfor %}
+
+<h3 class="mt-5 mb-3">Education</h3>
+{% for i in education %}
+        <div class="resume-item d-flex work">
+            <div>
+                <h4>{{i.degree_name}}</h4>
+                        <div class="d-flex">
+                            <div class="d-flex resume-meta">
+                                <span class="mr-3">
+                                    <span class="icon">
+                                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z" />
+                                                <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z" />
+                                                    <rect width="2" height="2" x="11" y="6" rx=".5" />
+                                        </svg>
+                                    </span>
+                                    <span>{{i.college}}</span>
+                                </span>
+                            </div>
+                            <div>{{i.location}}</div>
+                        </div>
+            </div>
+
+            <div class="ml-auto resume-meta">
+                <span class="icon">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar-event" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm1-3a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z" />
+                            <path fill-rule="evenodd" d="M3.5 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5zm9 0a.5.5 0 0 1 .5.5V1a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 .5-.5z" />
+                                <rect width="2" height="2" x="11" y="6" rx=".5" />
+                    </svg>
+                </span>
+                <span>{{i.dates}}</span>
+            </div>
+        </div>
+    {% endfor %}
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+
+<section class="site-section border-bottom bg-light" id="project-section">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center" data-aos="fade">
+<h2 class="section-title mb-3">Projects</h2>
+</div>
+</div>
+<div class="row align-items-stretch">
+    {% for i in projects %}
+
+            <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="unit-4">
+<!--            <div class="unit-4-icon mr-4"><span class="text-primary flaticon-startup"></span></div>-->
+                <div class="pro-img"><img src="{{i.project_img.url}}" width="350" height="200"></div>
+            <div>
+            <h3>{{i.project_title}}</h3>
+            <p>{{i.project_description}}</p>
+<!--            <p><a href="#">Learn More</a></p>-->
+            </div>
+            </div>
+            </div>
+    {% endfor %}
+
+
+</div>
+</div>
+</section>
+
+<section class="site-section" id="about-section">
+<div class="container">
+<div class="row mb-5">
+<div class="col-lg-5 ml-auto mb-5 order-1 order-lg-2" data-aos="fade" data-aos="fade-up" data-aos-delay="">
+<img src="{% static 'images/think.jpg' %}" alt="Image" class="img-fluid rounded" data-pagespeed-url-hash="532088955" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+</div>
+<div class="col-lg-6 order-2 order-lg-1" data-aos="fade">
+<div class="row">
+<div class="col-md-12 mb-md-5 mb-0 col-lg-6" data-aos="fade-up" data-aos-delay="">
+<div class="unit-4">
+<div class="unit-4-icon mr-4 mb-3">
+<!--    <span class="text-primary flaticon-head"></span></div>-->
+    <span class="text-primary"></span></div>
+<div class="">
+<h3>Certifications</h3>
+<ul>
+    {% for cert in certifications %}
+    <li>{{cert.certification_name}}</li><br>
+    {% endfor %}
+</ul>
+<!--<p class="mb-0"><a href="#">Learn More</a></p>-->
+</div>
+</div>
+</div>
+
+<div class="col-md-12 mb-md-5 mb-0 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+<div class="unit-4">
+<div class="unit-4-icon mr-4 mb-3">
+<!--    <span class="text-primary flaticon-smartphone"></span></div>-->
+    <span class="text-primary"></span></div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="site-section bg-light" id="contact-section" data-aos="fade">
+<div class="container">
+<div class="row mb-5">
+<div class="col-12 text-center">
+<h2 class="section-title mb-3">Contact Us</h2>
+</div>
+</div>
+<div class="row mb-5">
+<div class="col-md-4 text-center">
+<p class="mb-4">
+<!--    icon-room d-block h4 text-primary-->
+<span class="d-block h5 text-primary">Address
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg>
+
+</span>
+
+<span>9-137,Cherukuru, Prakasam ,Andhra Pradesh, India</span>
+</p>
+</div>
+<div class="col-md-4 text-center">
+<p class="mb-4">
+<!--    icon-phone d-block h4 text-primary-->
+<span class="d-block h5 text-primary">Mobile No
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg>
+</span>
+<span>+91 7569590392</span>
+</p>
+</div>
+<div class="col-md-4 text-center">
+<p class="mb-0">
+<!--    icon-mail_outline d-block h5 text-primary-->
+<span class="d-block h5 text-primary">Email
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+</svg>
+
+
+</span>
+<span class="__cf_email__" >nagababuupputuri@gmail.com
+
+</span>
+</p>
+</div>
+</div>
+<!--<div class="info">-->
+<!--    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.63550325991!2d80.41881811433441!3d15.875743348812227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a41451fcecafd%3A0x6876f6978d937db3!2sNaioth%20prophetic%20ministries!5e0!3m2!1sen!2sin!4v1646938364181!5m2!1sen!2sin"  frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>-->
+<!--</div>-->
+<br><br>
+<div class="row">
+<div class="col-md-12 mb-5">
+<form action="{% url 'home1' %}" class="p-5 bg-white" method="POST">
+    {% csrf_token %}
+<h2 class="h4 text-black mb-5">Contact Form</h2>
+    {% for i in contact_form %}
+                <div class="row form-group">
+                    <div class="col-md-12">
+
+                                {{i.errors}}
+                                {{i.label_tag}}
+                                {% render_field i class="form-control" %}
+                    </div>
+                </div>
+    {% endfor %}
+
+<div class="row form-group">
+<div class="col-md-12">
+<input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
+</div>
+</div>
+
+</form>
+</div>
+</div>
+</div>
+</section>
+
+
+</div>
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4>Join us on LinkedIn</h4>
+<!--            <p>Please check video</p>-->
+<!--            <form action="" method="post">-->
+<!--              <input type="email" name="email"><input type="submit" value="Subscribe">-->
+<!--            </form>-->
+            <a href="{% url 'linkedin' %}">Click to join</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Upputuri Nagababu</span></strong>. All Rights Reserved
+      </div>
+
+    </div>
+  </footer><!-- End Footer -->
+
+
+<!--</div>-->
+<script src="{% static 'js/sc2.js' %}"></script>
+<script src="{% static 'js/sc3.js' %}"></script><script>eval(mod_pagespeed_G69n8lQ1Te);</script>
+<script>eval(mod_pagespeed_MOx_XzvKY9);</script>
+<script src="{% static 'js/sc4.js' %}"></script>
+<script src="{% static 'js/sc5.js' %}"></script><script>eval(mod_pagespeed_AtTIgF36mz);</script>
+<script>eval(mod_pagespeed_owJw5iHxCn);</script>
+<script>eval(mod_pagespeed_FypGE__W3E);</script>
+<script>eval(mod_pagespeed_Hx1UZflSiu);</script>
+<script src="{% static 'js/sc6.js' %}"></script><script>eval(mod_pagespeed_L8Dr$kFz8z);</script>
+<script>eval(mod_pagespeed_yf$HHzm4sH);</script>
+<script src="{% static 'js/sc7.js' %}"></script><script>eval(mod_pagespeed_zCp8sY46cK);</script>
+<script>eval(mod_pagespeed_Bmo3vOhi_V);</script>
+
+<script async src="{% static 'js/sc8.js' %}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="{% static 'js/sc9.js' %}" data-cf-beacon='{"rayId":"6abdae15626b1d47","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}'></script>
+<script defer src="{% static 'js/sc10.js' %}" data-cf-beacon='{"rayId":"6abdae1538061d47","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}'></script>
+</body>
+</html>

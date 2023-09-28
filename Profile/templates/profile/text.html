@@ -1,0 +1,59 @@
+{% load static %}
+{% load widget_tweaks %}
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<title>Upputuri Nagababu</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="{% static 'css/font.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/download_resume.css' %}">
+
+<!--    <link rel="stylesheet" href="A.fonts,,_icomoon,,_style.css+css,,_bootstrap.min.css+css,,_jquery-ui.css+css,,_owl.carousel.min.css+css,,_owl.theme.default.min.css+css,,_owl.theme.default.min.css+css,,_jquery.fancybox.min.css+css,,_bootstrap-datepicker.css+fonts,,_flaticon,,_font,,_flaticon.css+css,,_aos.css+css,,_style.css,Mcc.nUFy_33lg_.css.pagespeed.cf.Yp4m69fwch.css" />-->
+<link rel="stylesheet" href="{% static 'css/all.css' %}">
+<link rel="stylesheet" href="{% static 'css/resume.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!--    <link rel="stylesheet" href="{% static 'css/messages.css' %}">-->
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+<div class="row">
+<div class="col-md-12 mb-5">
+<form action="{% url 'tx_to_sp' %}" class="p-5 bg-white" method="POST">
+    {% csrf_token %}
+<h2 class="h4 text-black mb-5">Text to Speech Model</h2>
+    {% for i in form %}
+                <div class="row form-group ">
+                    <div class="col-md-12">
+
+                                {{i.errors}}
+<!--                                {{i.label_tag}}-->
+                                {% render_field i class="form-control" %}
+                    </div>
+                </div>
+    {% endfor %}
+
+<div class="row form-group">
+<div class="col-md-10">
+<input type="submit" value="Speech" class="btn btn-primary btn-md text-white text-center">
+</div>
+</div>
+<div class="text-center">
+    {% if aud %}
+    <p>Please listen and download your Audio </p><br>
+
+        <audio controls="controls" id="player" autoplay="autoplay">
+                <source src="{{aud}}" type="audio/wav">
+                Your browser does not support the audio element.
+
+    </audio>
+    {% endif %}
+</div>
+</form>
+
+
+</div>
+</div>
+</body>
+
+</html>
